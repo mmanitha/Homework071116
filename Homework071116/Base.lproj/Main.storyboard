@@ -182,7 +182,7 @@
         <!--Exercise 4-->
         <scene sceneID="cL9-kM-EIc">
             <objects>
-                <viewController id="4ZN-fL-xAs" sceneMemberID="viewController">
+                <viewController id="4ZN-fL-xAs" customClass="Exercise4ViewController" customModule="Homework071116" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NhI-qI-YgV"/>
                         <viewControllerLayoutGuide type="bottom" id="fu5-0o-qBk"/>
@@ -190,7 +190,27 @@
                     <view key="view" contentMode="scaleToFill" id="3LO-s1-Onr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgk-OT-tNX">
+                                <rect key="frame" x="263" y="262.5" width="75" height="75"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="kuB-D1-wU3"/>
+                                    <constraint firstAttribute="width" constant="75" id="sDd-6f-HaG"/>
+                                </constraints>
+                                <state key="normal" title="Tap Me">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButton:" destination="4ZN-fL-xAs" eventType="touchUpInside" id="pIK-75-Ipt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sgk-OT-tNX" firstAttribute="centerY" secondItem="3LO-s1-Onr" secondAttribute="centerY" id="Hfe-dZ-sMV"/>
+                            <constraint firstItem="sgk-OT-tNX" firstAttribute="centerX" secondItem="3LO-s1-Onr" secondAttribute="centerX" id="eJL-NF-5Sv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Exercise 4" id="BYn-dL-E95">
                         <barButtonItem key="backBarButtonItem" title="Back" id="ikc-la-Tp6"/>
@@ -200,6 +220,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="myButton" destination="sgk-OT-tNX" id="FQo-bl-rwu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DY0-VE-nYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
