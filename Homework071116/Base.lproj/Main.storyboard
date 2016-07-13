@@ -161,7 +161,7 @@
         <!--Exercise 5-->
         <scene sceneID="3tD-uE-d9h">
             <objects>
-                <viewController id="Dmb-VJ-AzP" sceneMemberID="viewController">
+                <viewController id="Dmb-VJ-AzP" customClass="Exercise5ViewController" customModule="Homework071116" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1fD-iU-uwl"/>
                         <viewControllerLayoutGuide type="bottom" id="iGk-ld-R66"/>
@@ -169,11 +169,48 @@
                     <view key="view" contentMode="scaleToFill" id="cBC-cr-SrV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ql6-PD-pOJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7Qu-js-0aO">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="repeatedCell" tableViewCell="7Qu-js-0aO" id="Fpf-hB-x30">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4j-BU-Kqd">
+                                                    <rect key="frame" x="279" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="w4j-BU-Kqd" firstAttribute="centerY" secondItem="Fpf-hB-x30" secondAttribute="centerY" id="Cdh-Rx-otj"/>
+                                                <constraint firstItem="w4j-BU-Kqd" firstAttribute="centerX" secondItem="Fpf-hB-x30" secondAttribute="centerX" id="Xkg-GW-3Md"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ql6-PD-pOJ" firstAttribute="centerX" secondItem="cBC-cr-SrV" secondAttribute="centerX" id="0OY-zL-PFC"/>
+                            <constraint firstItem="ql6-PD-pOJ" firstAttribute="centerY" secondItem="cBC-cr-SrV" secondAttribute="centerY" id="12A-Qz-QQt"/>
+                            <constraint firstItem="ql6-PD-pOJ" firstAttribute="height" secondItem="cBC-cr-SrV" secondAttribute="height" id="AkH-AK-RqW"/>
+                            <constraint firstItem="ql6-PD-pOJ" firstAttribute="width" secondItem="cBC-cr-SrV" secondAttribute="width" id="Hlg-jC-O8L"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Exercise 5" id="nAZ-SR-ulN">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Mbu-Eo-5WG"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ql6-PD-pOJ" id="6B0-f3-oUf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhV-MB-RcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
