@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Exercise 1-->
@@ -66,7 +67,57 @@
                     <view key="view" contentMode="scaleToFill" id="QKf-Wf-OA8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caj-OG-Twa">
+                                <rect key="frame" x="0.0" y="64" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="JIf-j6-1jB"/>
+                                    <constraint firstAttribute="width" constant="20" id="Pue-CZ-EjB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKb-Hm-CSa">
+                                <rect key="frame" x="580" y="580" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="UQB-AR-f8h"/>
+                                    <constraint firstAttribute="width" constant="20" id="YWb-Ao-aj8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bd-4e-W7j">
+                                <rect key="frame" x="0.0" y="580" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="RxX-On-4Fm"/>
+                                    <constraint firstAttribute="height" constant="20" id="yaH-VO-T44"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qm2-2f-zqc">
+                                <rect key="frame" x="580" y="64" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="sA2-wm-mPS"/>
+                                    <constraint firstAttribute="height" constant="20" id="sLS-Tr-VOq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Bd-4e-W7j" firstAttribute="leading" secondItem="caj-OG-Twa" secondAttribute="leading" id="6Vh-Lx-ei3"/>
+                            <constraint firstAttribute="leading" secondItem="caj-OG-Twa" secondAttribute="leading" id="C91-b6-l6U"/>
+                            <constraint firstItem="caj-OG-Twa" firstAttribute="top" secondItem="4fO-qq-ccs" secondAttribute="bottom" id="IZM-ZQ-jKf"/>
+                            <constraint firstItem="3VL-Ut-iyL" firstAttribute="top" secondItem="bKb-Hm-CSa" secondAttribute="bottom" id="aOH-TB-Jh6"/>
+                            <constraint firstItem="3VL-Ut-iyL" firstAttribute="top" secondItem="9Bd-4e-W7j" secondAttribute="bottom" id="cCo-Dc-urw"/>
+                            <constraint firstAttribute="trailing" secondItem="qm2-2f-zqc" secondAttribute="trailing" id="kgb-LG-9Ru"/>
+                            <constraint firstItem="qm2-2f-zqc" firstAttribute="top" secondItem="caj-OG-Twa" secondAttribute="top" id="qNY-p1-QJS"/>
+                            <constraint firstAttribute="trailing" secondItem="bKb-Hm-CSa" secondAttribute="trailing" id="sTL-UN-O1L"/>
+                            <constraint firstItem="9Bd-4e-W7j" firstAttribute="leading" secondItem="QKf-Wf-OA8" secondAttribute="leadingMargin" constant="10" id="w80-IG-atb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="w80-IG-atb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Exercise 2" id="bBd-HG-waj">
                         <barButtonItem key="backBarButtonItem" title="Back" id="cGd-IA-Vsv"/>
