@@ -16,7 +16,31 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ee-gZ-5RR">
+                                <rect key="frame" x="0.0" y="590" width="600" height="10"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="WbF-wU-OEY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g98-hO-Ljr">
+                                <rect key="frame" x="0.0" y="64" width="600" height="10"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="xkf-VU-rOT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g98-hO-Ljr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="FcG-Cy-C50"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6ee-gZ-5RR" secondAttribute="bottom" id="O06-tB-k5G"/>
+                            <constraint firstItem="6ee-gZ-5RR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="YdM-V0-N8X"/>
+                            <constraint firstItem="g98-hO-Ljr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="agr-X2-ZPx"/>
+                            <constraint firstItem="6ee-gZ-5RR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kpG-ge-9KQ"/>
+                            <constraint firstItem="g98-hO-Ljr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sqH-sa-8c4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Exercise 1" id="xX9-5R-QuF">
                         <barButtonItem key="backBarButtonItem" title="Back" id="fdI-CW-j2e"/>
